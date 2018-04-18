@@ -1,0 +1,123 @@
+
+//*  les classes de section5------------------------------------------------------*//
+img .homme2{
+	position:relative;
+}
+.section5 figure{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	img{
+		display: block;
+	}
+	.text-image{
+		position:absolute;
+		margin-top:15px;
+		top: 20px;
+		right: 20px;
+		bottom: 20px;
+		left: 20px;
+		background-color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		opacity: 0;
+		transition: all 0.3s ease-in-out;
+		@media (max-width: $md - 1){
+		right: 0px;
+		}	
+	}
+	&:hover .text-image{
+		opacity: 1;
+		@media (max-width: $md - 1){
+		opacity: 1;
+
+		}
+	}
+}
+//* text-images classe ------------------------------------------------------*//
+.add,
+.Quick,
+.view{
+	text-align: center;
+	margin-top:12px;
+	font-size:12px;
+	text-transform:uppercase;
+	color:#000000;
+	background: #ffffff;
+	transition: all 0.2s ease-in-out;
+	@media (max-width: $md - 1){
+	text-align: center;
+	margin-top:12px;
+	font-size:12px;
+	text-transform:uppercase;
+	color:#000000;
+	background: #ffffff;
+	transition: all 0.2s ease-in-out;
+	}
+}
+//* button section5 ------------------------------------------------------*//
+button.add{
+			padding: 17px 35px;
+		}
+button.Quick{
+			padding: 17px 40px;
+		}
+button.view{
+			padding: 17px 33px;
+		}
+
+.view:hover{
+    background: #000000;
+   	color:#ffffff ;    
+ }
+ .add:hover{
+    background: #000000;
+   	color:#ffffff ;
+ }
+ .Quick:hover{
+    background: #000000;
+   	color:#ffffff ;
+ }
+ //* star + prix & titre------------------------------------------------------*//
+.t-shirt{
+	position:absolute;
+	margin-top:30px;
+	@media (max-width: $md - 1){
+	position: absolute;
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+	}	
+}
+//*  homme classe ------------------------------------------------------*//
+.homme,
+.homme2,
+.homme3,
+.homme4{
+	position:relative;
+	float:right;
+
+	}
+.homme img,
+.homme2 img,
+.homme3 img,
+.homme4 img{
+
+	width:100%;
+	max-width:320px;
+}
+img .homme2{
+	position:relative;
+}
+
+.total{
+	@media (max-width: $md - 1){
+		width:50%;
+		position: relative;
+	}
+}
+//*fin section5 ------------------------------------------------------*//
+
+

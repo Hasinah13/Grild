@@ -1,0 +1,83 @@
+
+//les cubes de section ------------------------------------------------------*//
+.cube2{
+	display:inline-block;
+	width:10px;
+	height:10px;
+	padding: 5px;
+	text-align: center;
+	margin-left:10px;
+	margin-right:10px;
+	background-color:#636363;
+	clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+	transform:rotate(40deg);
+}
+.lescubes{
+	text-align:center;
+	padding-bottom:60px;
+	margin-left:12px;
+}
+.cube3{
+	display:inline-block;
+	width: 5px;
+	height: 5px;
+	background-color:#d2d2d2;
+	padding: 2px;
+	transform:rotate(40deg);
+	margin:auto;
+	@media (max-width: $md - 1){
+	}	
+}
+.cube1{
+	display:inline-block;
+	width: 5px;
+	height: 5px;
+	background-color:#d2d2d2;
+	padding: 2px;
+	transform:rotate(40deg);	
+}
+.cubes{
+	clear:both;
+	text-align: center;
+	top:-50px;
+	 padding-bottom:60px;
+	 margin-left:10px;
+}
+// fin les cubes de section6 ------------------------------------------------------*//
+//* le paragraphe de section6------------------------------------------------------*//
+.k3nnyart{ 
+	color:#000000;
+	font-family:RobotoSlab;
+	font-style:Bold;
+}
+.date{
+	margin-left:5px;
+	margin-right:5px;
+}
+.paragraphe5{
+	position: relative;
+	.flech {
+		position:absolute;
+		bottom:75%;
+		&.prev { left: -570px; }
+		&.next {right: 100px; }
+	}
+}
+.Reviews {
+	font-size:12px;
+	padding-bottom:50px;
+	font-family:$font-family;
+}
+.Reviews p {
+
+color:#a9a9a9;
+}
+.More p{
+	text-align: center;
+	padding-bottom:60px;
+	padding-top:60px;
+	font-family:$font-family;
+	font-size:18px;
+}
+//fin le paragraphe section6 ------------------------------------------------------*//
+//* finsection6 ------------------------------------------------------*//

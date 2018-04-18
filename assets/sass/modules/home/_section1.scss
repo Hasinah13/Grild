@@ -1,0 +1,107 @@
+
+//* section1------------------------------------------------------*//
+//* femme classe------------------------------------------------------*//
+.femme{
+	width:100%;
+	position:relative;
+	margin-top:27px;
+	margin-bottom:38px;
+}
+.femme {
+	position: relative;
+
+	.flech {
+		position:absolute;
+		top:50%;
+		&.prev { left: -20px; }
+		&.next { right: -20px; }
+	}
+}
+.femme img{
+	width:100%;
+	height:auto;
+}
+//* fin femme classe------------------------------------------------------*//
+//* womenDresses class------------------------------------------------------*//
+
+.womenDresses{
+	position:absolute;
+	width:50%;
+	bottom:30px;
+	right:0;
+	@media (max-width: $md - 1){
+	top:40px;
+	margin-top:70px;
+	}
+}
+//*  fin womenDresses class------------------------------------------------------*//
+//* buttons section1------------------------------------------------------*//
+.Button{
+		margin-bottom:100px;
+}
+.collections button{
+	background-color:#ffffff;	
+}
+.collections button:placeholder-shown{
+	border: none;
+  }
+//*  fin button section1------------------------------------------------------*//
+//* collections classe------------------------------------------------------*//
+.collections{
+	color:#000000;
+	background: #ffffff;
+	padding: 15px 40px;
+	text-align: center;
+	font-size:12px;
+	text-transform:uppercase;
+	margin-top:25px;
+	transition: all 0.2s ease-in-out;
+	@media (max-width: $md - 1){
+	padding: 6px 10px;
+	font-size:8px;
+	margin-left:60px;
+	}
+}
+.collections:hover{
+    background: #000000;
+   	color:#ffffff ;
+ }
+
+ //*  fin collections classe------------------------------------------------------*//
+ //* Featured-Collections classe------------------------------------------------------*//
+.Featured-Collections p{
+	font-size:18px;
+	color:#3d3d3d;
+	margin-bottom:40px;
+	@media (max-width: $md - 1){
+	font-size:14px;
+	}
+}
+.Featured-Viewall{
+	float:right;
+	margin-top:-50px;
+}
+
+a{
+	font-size: 12px;
+	font-family: $font-family;
+	color: $color;
+	@media (max-width: $md - 1){
+	font-size:10px;
+	}
+}
+.icon-long-arrow-right:before {
+  	content: "\e904";
+  	margin-left:5px;
+}
+//*  fin Featured-Collections classe------------------------------------------------------*//
+/*  fin section1------------------------------------------------------*/
+
+
+
+
+
+
+
+
+

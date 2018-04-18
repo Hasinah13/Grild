@@ -1,0 +1,19 @@
+.mail1 {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 50px; }
+  .mail1 a {
+    font-size: 18px; }
+  .mail1 input {
+    position: relative;
+    text-align: center;
+    padding-left: 50px;
+    text-align: left;
+    width: 377px;
+    height: 50px;
+    font-size: 12px; }
+
+.Subscribe {
+  width: 100%;
+  position: relative;
+  text-align: center; }

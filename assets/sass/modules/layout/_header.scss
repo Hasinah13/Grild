@@ -1,0 +1,125 @@
+
+//* contenaire------------------------------------------------------*//
+.contenaire{
+	width: 95%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+@media (max-width: $md -1){
+		.contenaire{
+			width: 95%;
+			max-width: 768px;
+			margin: 0 auto;
+		}
+}
+//* header------------------------------------------------------*//
+header{
+	width: 95%;
+	@media (max-width: $md -1){
+	width: 95%;
+	max-width: 768px;
+	margin: 0 auto;
+	}
+}
+header{
+	@media (max-width: $md - 1){
+		display:flex;
+	}
+
+.lettre{
+	width: 50px;
+	height: 50px;
+	background-color:#363636;
+	color: #ffffff;
+	font-size: 40px;
+	font-style: regular;
+	text-align: center;
+	padding: 25px;
+	position:relative;
+	@media (max-width: $md - 1){
+	width: 25px;
+	height: 25px;
+	padding: 5px;
+	font-size: 20px;
+	background-color:#c7c7cb;
+	color: #000000;
+	}
+}
+//* logo gauche------------------------------------------------------*//
+
+.logo{
+	position:relative;
+ 	display: inline-block;
+ 	padding: 20px; 
+ 
+}
+.logo2{
+	width: 0;
+	z-index:10;
+	border-style: solid;
+	border-width: 0 0 25px 25px;
+	border-color: transparent transparent #ff4747 transparent;
+	position:absolute;
+	margin-left:75px;
+	margin-top:75px;
+	@media (max-width: $md - 1){
+	display:none;
+	}
+}  	
+.text{
+	display: inline-block;
+	font-style: Bold;
+	font-size: 21px;
+	font-family:Raleway;
+}
+.Pillow{
+	margin-left: 120px;
+	margin-top: -90px;
+	margin-bottom: 90px;
+}
+//* main menu------------------------------------------------------*//
+
+.main-menu{
+	width: 40px;
+	height: 40px;
+	background-color:#363636;
+	padding: 30px;
+	float:right;
+	margin-bottom:18px;
+	@media (max-width: $md - 1){
+  	background-color:#c7c7cb;
+  	width: 25px;
+	height: 25px;
+	padding: 5px;
+	margin-top:20px;
+	hr{
+	margin:3px;	
+	}
+	}
+}
+.main-menu hr{
+	padding-top:2px;
+	background-color:#ffffff;
+	@media (max-width: $md - 1){
+	background-color:#000000;
+	padding-top:2px;
+	}
+}
+//* paragraphes header------------------------------------------------------*//
+.paragraphes p{
+	font-style: regular;
+	font-size: 24px;
+	font-family:$font-family;
+	color:#3d3d3d;
+ 	@media (max-width: $md - 1){
+ 	font-size: 7px;
+ 	texte-aligne:center;
+
+
+ 	}
+}
+//*  fin header------------------------------------------------------*//
+	
+	
+}

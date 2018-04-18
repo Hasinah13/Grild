@@ -1,0 +1,53 @@
+//* section2------------------------------------------------------*//
+/* section2 classe------------------------------------------------------*/
+
+.section2 h3{
+	text-transform:uppercase;
+}
+.section2 img{
+	width: 100%;
+	height: auto;
+}
+.section2 {
+	.mosaic {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+/* product classe------------------------------------------------------*/
+	.product {
+		overflow: hidden;
+
+		&.veste,
+		&.chausseures { width: 100%; }
+
+		&.sac,
+		&.glasses { width: calc(50% - 5px); }
+
+		&.veste { @include ratio(100, 100); }
+		&.chausseures { @include ratio(278, 574); margin-bottom: 10px; }
+		&.sac { @include ratio(100, 200); margin-right: 5px; }
+		&.glasses { @include ratio(100, 200); margin-left: 5px; }
+
+		img {
+			position: absolute;
+			width: 100%;
+			top: 0;
+			left: 0;
+		}
+	}
+}
+/* les classes de section2 product------------------------------------------------------*/
+.Mensjacket,
+.womenshoses,
+.backpack,
+.Glasses{
+	position:absolute;
+	top: 20px;
+	left: 20px;
+}
+.shoes{
+	position:relative;
+
+}
+//* fin section2------------------------------------------------------*//

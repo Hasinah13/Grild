@@ -1,0 +1,256 @@
+
+body{
+	font-family:$font-family;
+}
+p{
+	color:$color;
+}
+//* h------------------------------------------------------*//
+h1{font-size:34px;
+	margin:0;
+	@media (max-width: $md - 1){
+	font-size:14px;
+	margin:0;
+
+	}
+}
+h2{font-size:18px;
+	margin:0;
+	font-family:$font-family;
+	color: #3d3d3d;
+	text-align: center;
+	text-transform:uppercase;
+	margin-top:70px;
+	@media (max-width: $md - 1){
+		font-size:14px;
+
+	}
+}
+
+h3{font-size:14px;
+	margin:0;
+	color: #3d3d3d;
+	font-family:$font-family;
+	@media (max-width: $md - 1){
+		font-size:14px;
+
+	}
+	
+}
+h4{font-size:12px;
+	margin:0;
+	font-family:$font-family;
+	color: #3d3d3d;
+
+}
+
+.paragraphe5 h5::before {
+	content: "";
+	display: inline-block;
+	width:43px;
+	border: 1px solid #3d3d3d;
+}
+	//* border  
+.paragraphe5{
+	border-left:1px dotted;
+} 
+.paragraphe4 h5::before {
+	content: "";
+	display: inline-block;
+	width:43px;
+	border: 1px solid #3d3d3d;
+}
+.More h2{
+		margin-top:50px;
+		margin-bottom:60px;
+		text-transform:uppercase;
+}
+//* fin h------------------------------------------------------*//
+a{
+	font-size:12px;
+	font-family:$font-family;
+	color:$color;
+}
+ul{
+	list-style:none;
+}
+ .womenshoses a{
+	text-decoration: none;	
+}
+ .backpack a{
+	text-decoration: none;	
+}
+ .Glasses a{
+	text-decoration: none;	
+}
+ .Mensjacket a{
+	text-decoration: none;	
+}
+
+hr{
+	margin:4px
+}
+.section6 {
+	margin-top:70px;
+}
+
+//* svg------------------------------------------------------*//
+
+svg{
+	color:#b0b0b0;		
+	display:block;
+}
+ 
+.section1 svg.svg-inline--fa.fa-w-14,
+.section6 svg.svg-inline--fa.fa-w-14{
+	font-size:25px;
+	color:#000;
+}
+
+strong{
+	color:#000;
+}
+.section6 .fa-arrow-left{
+	margin-left:80px;
+	margin-top:50px;
+
+}
+.section6 .fa-arrow-right{
+	margin-right:50px;
+	margin-top:50px;
+
+}
+
+.svg{
+	float:right;
+	margin-left:160px;
+	margin-top:-15px;
+	font-size:11px;
+	@media (max-width: $md - 1){
+	float:none;
+	margin-left:0;
+	margin-top:0px;
+	
+
+	}
+}
+svg ::before {
+    content: '\f005';
+    color:#b0b0b0;    
+}
+	svg :hover::before{
+		color:#b0b0b0;	
+}
+svg :hover::after{
+		color:#fbaf5d;	
+}
+.flèch svg{
+	postion:absolute;
+}
+//* fin svg------------------------------------------------------*//
+
+
+//* section.------------------------------------------------------*//
+
+.section1,
+.section2,
+.section3,
+.section4,
+.section5,
+.section6{
+	clear:both;
+
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+}
+.section5{
+	padding-top:62px;
+	padding-bottom:78px;
+}
+.section2{
+	width:100%;
+	position:relative;
+	margin-top:38px;
+}
+//*  finsection.------------------------------------------------------*//
+
+
+
+//* .paragraphe------------------------------------------------------*//
+
+
+.paragraphe{
+	max-width: 800px;
+	font-style: regular;
+	font-size: 18px;
+	font-family:$font-family;
+	color:$color;
+}
+
+.paragraphes{
+	@media (max-width: $md - 1){
+		padding-top:100px;
+		width:1%;
+		flex-grow:1;
+		text-align:center;
+		font-size: 9px;	
+	}
+
+}
+.paragraphe4 {
+	text-align:right;
+	position:relative;
+	font-size:18px;
+	color:#3d3d3d;
+	padding-right:20px;
+	@media (max-width: ($md - 1)) {
+	padding-left: 0;
+	text-align:center;
+	font-size:12px;
+	}		
+}
+.paragraphe5{
+	text-align:left;
+	position:relative;
+	font-size:18px;
+	color:#3d3d3d;
+	padding-left:20px;
+	@media (max-width: ($md - 1)) {
+	padding-left: 0;
+	text-align:center;
+
+	}	
+}
+.paragraphe4  p,
+.paragraphe5  p{
+	color:#3d3d3d;
+}
+.paragraphe4 h4,
+.paragraphe5 h4 {
+	font-family:$font-family;
+	font-size:18px;
+	color: #3d3d3d;
+}
+.paragraphe2,
+.paragraphe3{
+	text-align: center;
+	width:100%;
+	font-size: 12px;
+	font-family:$font-family;
+	color:$color;
+}
+//* fin paragraphe------------------------------------------------------*//
+
+
+
+
+
+	
+
+
+
+	

@@ -1,0 +1,111 @@
+
+/*-----------------------------------------------
+les variables 
+------------------------------------------------*/
+
+$columns :12!default;
+$gutter:2px!default;
+
+$xs:320px!default;
+$sm: 768px!default;
+$md: 1024px!default;//*cibler*//
+$lg: 1200px!default;
+
+$font-family:'Roboto Slab';
+$color:#989898;
+/*-----------------------------------------------
+$Mixins
+------------------------------------------------*/
+@mixin responsive-columns($suffix: ''){
+  @for $i from 0 through $columns{
+    @if $i != 0 {
+      .col-#{$suffix}-#{$i}{ width:$i / $columns * 100%;
+       position: relative;
+       float:left; }
+    }
+      
+      .col-#{$suffix}-center{margin: 0 auto; float: none; }
+      .col-#{$suffix}-push-#{$i}{ left:$i / $columns * 100%; }
+      .col-#{$suffix}-offset-#{$i}{ margin-left:$i / $columns *100%; }
+      .col-#{$suffix}-pull-#{$i}{ left:$i / $columns *100%;}
+    }
+}
+
+/*-----------------------------------------------
+$Extends
+------------------------------------------------*/
+%col{
+  box-sizing:border-box;
+  padding:0 5px;  
+  min-height: 1px;
+  float: left;
+
+ 
+
+}
+/*-----------------------------------------------
+$Class
+------------------------------------------------*/
+/*-----------------------------------------------
+$Grides
+------------------------------------------------*/
+@for $i from 1 through $columns{
+  .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}{ @extend %col; }
+
+}
+
+@media (max-width: ($sm - 1)) {
+  @include responsive-columns('xs');
+}
+
+@media (min-width: $sm) and (max-width: ($md - 1)) {
+  @include responsive-columns('sm');
+}
+
+@media (min-width: $md) and (max-width: ($lg - 1)) {
+  @include responsive-columns('md');
+}
+
+@media (min-width: $lg) {
+  @include responsive-columns('lg');
+}
+
+/*-----------------------------------------------
+Calcul ratio
+------------------------------------------------*/
+@mixin ratio ($target, $context) {
+  padding-top: percentage(($target / $context));
+  position: relative;
+  height: 0;
+}
+
+
+
+/*-----------------------------------------------
+Masquer
+------------------------------------------------*/
+@media (max-width: $sm - 1){
+  .hide-mobile{
+    display: none;
+  }
+}
+@media (max-width: $md - 1){
+  .hide-tablet{
+    display: none;
+  }
+}
+
+
+@media (min-width: $md){
+  .hide-desktop{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
